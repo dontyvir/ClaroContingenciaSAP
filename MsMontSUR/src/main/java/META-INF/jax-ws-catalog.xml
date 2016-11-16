@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://localhost:8088/ZWS_MS_MONT_SUR/#%7Burn%3Asap-com%3Adocument%3Asap%3Asoap%3Afunctions%3Amc-style%7DZWS_MS_MONT_SUR?wsdl"
+          uri="../cl/clarochile/pdt/sur/msmont/ws/impl/ZWS_MS_MONT_SUR.wsdl"/>
+</catalog>

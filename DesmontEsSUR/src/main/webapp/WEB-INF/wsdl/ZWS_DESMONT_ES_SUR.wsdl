@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="urn:sap-com:document:sap:rfc:functions">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char16">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="16"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char255">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:n0="urn:sap-com:document:sap:rfc:functions">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions"/>
+      <xsd:complexType name="ZesCabCon">
+        <xsd:sequence>
+          <xsd:element name="Idenvio" type="n0:numeric20"/>
+          <xsd:element name="Fechaenvio" type="n0:char20"/>
+          <xsd:element name="Sisorigen" type="n0:char4"/>
+          <xsd:element name="Sisdestino" type="n0:char4"/>
+          <xsd:element name="Negocio" type="n0:char3"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZesCabRes">
+        <xsd:sequence>
+          <xsd:element name="Idrespuesta" type="n0:numeric20"/>
+          <xsd:element name="Operationstatus" type="n0:char10"/>
+          <xsd:element name="Code" type="n0:numeric3"/>
+          <xsd:element name="Message" type="n0:char255"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZwsDesmontEsSur">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Estadoequipo" type="n0:char20"/>
+            <xsd:element name="Fechainstalacion" type="n0:char20"/>
+            <xsd:element name="ICabCon" type="tns:ZesCabCon"/>
+            <xsd:element name="Idcentroaliado" type="n0:char3"/>
+            <xsd:element name="Idordenlegado" type="n0:char16"/>
+            <xsd:element name="Mac" type="n0:char18" minOccurs="0"/>
+            <xsd:element name="Numeroserie" type="n0:char18"/>
+            <xsd:element name="Rutsociedad" type="n0:char18"/>
+            <xsd:element name="Sku" type="n0:char18"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZwsDesmontEsSurResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ECabRes" type="tns:ZesCabRes"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZwsDesmontEsSur">
+    <wsdl:part name="parameters" element="tns:ZwsDesmontEsSur"/>
+  </wsdl:message>
+  <wsdl:message name="ZwsDesmontEsSurResponse">
+    <wsdl:part name="parameter" element="tns:ZwsDesmontEsSurResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZWS_DESMONT_ES_SUR">
+    <wsdl:operation name="ZwsDesmontEsSur">
+      <wsdl:input message="tns:ZwsDesmontEsSur"/>
+      <wsdl:output message="tns:ZwsDesmontEsSurResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZWS_DESMONT_ES_SUR" type="tns:ZWS_DESMONT_ES_SUR">
+    <wsa:EndpointReference xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+      <wsa:ReferenceParameters/>
+    </wsa:EndpointReference>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ZwsDesmontEsSur">
+      <soap:operation style="document" soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZWS_DESMONT_ES_SUR">
+    <wsdl:port name="ZWS_DESMONT_ES_SUR" binding="tns:ZWS_DESMONT_ES_SUR">
+      <soap:address location="http://localhost:7101/DesmontEsSUR/ZWSDESMONTESSURImplService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

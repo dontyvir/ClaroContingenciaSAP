@@ -1,0 +1,268 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="ZWSMSMONTSUR_Service.xml"/>
+      <url path="ZWS_MS_MONT_SUR.wsdl"/>
+      <url path="type/ObjectFactory.java"/>
+      <url path="type/package-info.java"/>
+      <url path="type/ZwsMsMontSur.java"/>
+      <url path="ZWSMSMONTSUR.java"/>
+      <url path="type/ZwsMsMontSurResponse.java"/>
+      <url path="ZWSMSMONTSUR_Service.java"/>
+      <url path="type/ZesCabRes.java"/>
+      <url path="ZWS_MS_MONT_SURClient.java"/>
+      <url path="type/ZesCabCon.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MIME"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="ZWSMSMONTSUR_Service.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="cl.clarochile.pdt.sur.msmont.ws.impl"/>
+            <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE" v="cl.clarochile.pdt.sur.msmont.ws.impl.type"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_ENABLED"/>
+      <list n="PROXY_CLIENTS">
+         <url path="ZWS_MS_MONT_SURClient.java"/>
+      </list>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" path="../../../../../../../../../../../../../../Descargas/Servicios_NEW-QAS/ZWS_MS_MONT_SUR/QAS400_ZWS_MS_MONT_SUR.wsdl"/>
+      <hash n="PROXY_PORTS">
+         <hash n="ZWS_MS_MONT_SUR">
+            <value n="ACCESSES_DOC_WRAPPPED" v="true"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="cl.clarochile.pdt.sur.msmont.ws.impl.ZWSMSMONTSUR"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="ZWS_MS_MONT_SUR"/>
+            <hash n="OPERATIONS">
+               <hash n="ZwsMsMontSur">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_POLICY">
+                  <value n="addressing"/>
+                  <hash n="GLOBAL_CONFIG_PROPERTIES"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <list n="wsconfig"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="http" host="claro855.clarochile.org" port="8000" path="/sap/bc/srt/rfc/sap/zws_ms_mont_sur/400/zws_ms_mont_sur/zws_ms_mont_sur"/>
+            <url n="PROXY_PORT_ENDPOINT" protocol="http" host="localhost" port="8088" path="/ZWS_MS_MONT_SUR"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="ZWS_MS_MONT_SUR"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="urn:sap-com:document:sap:soap:functions:mc-style"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../../../../../../../../../MsMontSUR.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST"/>
+      <url n="PROXY_WSDL_URL" path="ZWS_MS_MONT_SUR.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BOUND_PORT_TYPE" v="{urn:sap-com:document:sap:soap:functions:mc-style}ZWS_MS_MONT_SUR"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{urn:sap-com:document:sap:soap:functions:mc-style}ZWS_MS_MONT_SUR"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BD_SOAP_ACTION" v=""/>
+                     <value n="BD_WSDL_RETURN_NAME" v="ECabRes"/>
+                     <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                     <value n="BOUND_OPERATION" v="cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabRes.ZwsMsMontSur.java.lang.String.java.lang.String.java.lang.String.cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabCon.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES"/>
+         <value n="GUID" v="6eb659a2-0158-1000-8338-7f00010155b9"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="ZWS_MS_MONT_SUR"/>
+               <value n="PORT_BINDING_NAME" v="{urn:sap-com:document:sap:soap:functions:mc-style}ZWS_MS_MONT_SUR"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabRes.zwsMsMontSur.java.lang.String.java.lang.String.java.lang.String.cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabCon.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="http" host="claro855.clarochile.org" port="8000" path="/sap/bc/srt/rfc/sap/zws_ms_mont_sur/400/zws_ms_mont_sur/zws_ms_mont_sur"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+               <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="cl.clarochile.pdt.sur.msmont.ws.impl"/>
+               <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE" v="cl.clarochile.pdt.sur.msmont.ws.impl.type"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{urn:sap-com:document:sap:soap:functions:mc-style}ZWS_MS_MONT_SUR"/>
+               <list n="OP_">
+                  <hash>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                     <value n="OP_JAVA_NAME" v="zwsMsMontSur"/>
+                     <list n="OP_JAVA_PARAMETERS">
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="comuna"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Comuna"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="contratocliente"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Contratocliente"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="fechainstalacion"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Fechainstalacion"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="iCabCon"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="ICabCon"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabCon"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="idcentroaliado"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Idcentroaliado"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="idordenlegado"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Idordenlegado"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="nodo"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Nodo"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="numeroserie"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Numeroserie"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="pais"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Pais"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="razonsocial"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Razonsocial"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="region"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Region"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="rutcliente"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Rutcliente"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="rutsociedad"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Rutsociedad"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="sku"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Sku"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                        <hash>
+                           <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                           <value n="NAME" v="tipocliente"/>
+                           <value n="PA_MODE" v="0"/>
+                           <value n="PA_WSDL_NAME" v="Tipocliente"/>
+                           <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                           <value n="TYPE" v="java.lang.String"/>
+                        </hash>
+                     </list>
+                     <value n="OP_JAVA_RETURN_TYPE" v="cl.clarochile.pdt.sur.msmont.ws.impl.type.ZesCabRes"/>
+                     <value n="OP_NAME" v="ZwsMsMontSur"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="cl.clarochile.pdt.sur.msmont.ws.impl.ZWSMSMONTSURImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="cl.clarochile.pdt.sur.msmont.ws.impl.ZWSMSMONTSUR"/>
+               <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="cl.clarochile.pdt.sur.msmont.ws.impl.ZWSMSMONTSUR"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../../../../../../../../../MsMontSUR.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="urn:sap-com:document:sap:soap:functions:mc-style"/>
+         <value n="WS_URI" v="ZWS_MS_MONT_SUR"/>
+         <url n="WS_WSDL_FILE" path="ZWS_MS_MONT_SUR.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>
