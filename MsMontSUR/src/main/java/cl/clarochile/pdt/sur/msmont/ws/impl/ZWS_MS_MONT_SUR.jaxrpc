@@ -33,7 +33,7 @@
       </list>
       <list n="BINDING_FILES"/>
       <value n="GENERATION_OPTION" v="ANNOTATIONS_WSDL"/>
-      <value n="GUID" v="6eb1ecdf-0158-1000-82ff-7f00010155b9"/>
+      <value n="GUID" v="6f6ef33d-0158-1000-80b3-7f000101ab59"/>
       <value n="LAST_GENERATION_BOTTOM_UP" v="false"/>
       <list n="LOCAL_FILES"/>
       <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
