@@ -34,6 +34,7 @@
       <hash><url n="URL" path="MnsMontSUR/MnsMontSUR.jpr"/></hash>
       <hash><url n="URL" path="MsMontESAC/MsMontESAC.jpr"/></hash>
       <hash><url n="URL" path="MsMontSUR/MsMontSUR.jpr"/></hash>
+      <hash><url n="URL" path="Persistencia/Persistencia.jpr"/></hash>
       <hash><url n="URL" path="SerieESAC/SerieESAC.jpr"/></hash>
       <hash><url n="URL" path="SerieSUR/SerieSUR.jpr"/></hash>
    </list>

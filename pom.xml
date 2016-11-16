@@ -24,6 +24,7 @@
     <module>DesmontEsESAC</module>
     <module>DesmontEsSUR</module>
     <module>MsMontSUR</module>
+    <module>Persistencia</module>
   </modules>
   <dependencies>
     <dependency>
@@ -101,6 +102,18 @@
     <dependency>
       <groupId>PDT</groupId>
       <artifactId>MsMontSUR</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>PDT</groupId>
+      <artifactId>Persistencia</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>PDT</groupId>
+      <artifactId>Persistencia</artifactId>
       <version>1.0-SNAPSHOT</version>
       <type>jar</type>
     </dependency>

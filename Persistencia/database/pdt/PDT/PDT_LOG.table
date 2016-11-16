@@ -1,0 +1,427 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>PDT_LOG</name>
+  <columns>
+    <column>
+      <name>PDT_ID_PROCESO</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Proceso en ejecución
+</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_ID_PROCESO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PDT_FECHA_EVENTO</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>TIMESTAMP</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Registro de fecha de Evento
+</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_FECHA_EVENTO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PDT_SERVICIO</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Servicio ejecutado en SAP
+</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_SERVICIO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PDT_DESCRIPCION_EVENTO</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>CLOB</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Registro con toda la información del envío y encolamiento en caso de estar en contingencia</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_DESCRIPCION_EVENTO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleColumnProperties</key>
+          <value class="oracle.javatools.db.ora.OracleColumnProperties">
+            <LOBProperties>
+              <name></name>
+              <LOBCache>NOCACHE</LOBCache>
+              <LOBSegName>SYS_LOB0000091995C00004$$</LOBSegName>
+              <chunk>8192</chunk>
+              <properties>
+                <entry>
+                  <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                  <value class="oracle.javatools.db.ReferenceID">
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <name>PDT_DESCRIPCION_EVENTO</name>
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <name>PDT_LOG</name>
+                          <identifier class="java.math.BigDecimal">91995</identifier>
+                          <schemaName>PDT</schemaName>
+                          <type>TABLE</type>
+                        </parent>
+                        <type>COLUMN</type>
+                      </parent>
+                      <type>OracleColumnProperties</type>
+                    </parent>
+                    <type>LOB DESCRIPTOR</type>
+                  </value>
+                </entry>
+              </properties>
+              <retention>true</retention>
+              <storage>
+                <bufferMode>DEFAULT</bufferMode>
+                <initialExtent>65536</initialExtent>
+                <logging>true</logging>
+                <maxExtent>0</maxExtent>
+                <minExtent>1</minExtent>
+                <nextExtent>1048576</nextExtent>
+                <tablespaceID class="oracle.javatools.db.ReferenceID">
+                  <name>USERS</name>
+                  <type>TABLESPACE</type>
+                </tablespaceID>
+              </storage>
+              <storageInRow>true</storageInRow>
+            </LOBProperties>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>PDT_LOG_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>PDT_ID_PROCESO</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>PDT_LOG</name>
+            <schemaName>PDT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PDT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>PDT_FECHA_EVENTO</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>PDT_LOG</name>
+            <schemaName>PDT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PDT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>PDT_SERVICIO</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>PDT_LOG</name>
+            <schemaName>PDT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PDT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>PDT_LOG_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>PDT_LOG</name>
+          <schemaName>PDT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>PDT</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_LOG_PK</name>
+            <childObjectNames>
+              <childObjectName>PDT_ID_PROCESO</childObjectName>
+              <childObjectName>PDT_FECHA_EVENTO</childObjectName>
+              <childObjectName>PDT_SERVICIO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>PDT_LOG_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>PDT_ID_PROCESO</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>PDT_ID_PROCESO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>PDT_LOG_PK</name>
+                  <identifier class="java.math.BigDecimal">92007</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>PDT_LOG</name>
+                    <identifier class="java.math.BigDecimal">91995</identifier>
+                    <schemaName>PDT</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PDT</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>PDT_FECHA_EVENTO</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>PDT_FECHA_EVENTO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>PDT_LOG_PK</name>
+                  <identifier class="java.math.BigDecimal">92007</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>PDT_LOG</name>
+                    <identifier class="java.math.BigDecimal">91995</identifier>
+                    <schemaName>PDT</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PDT</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>PDT_SERVICIO</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>PDT_SERVICIO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>PDT_LOG_PK</name>
+                  <identifier class="java.math.BigDecimal">92007</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>PDT_LOG</name>
+                    <identifier class="java.math.BigDecimal">91995</identifier>
+                    <schemaName>PDT</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PDT</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PDT_LOG_PK</name>
+            <identifier class="java.math.BigDecimal">92007</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PDT_LOG</name>
+              <identifier class="java.math.BigDecimal">91995</identifier>
+              <schemaName>PDT</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PDT</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>USERS</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PDT</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">pdt</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>PDT_LOG</name>
+        <identifier class="java.math.BigDecimal">91995</identifier>
+        <schemaName>PDT</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleInMemoryProperties</key>
+      <value class="oracle.javatools.db.ora.OracleInMemoryProperties">
+        <inMemory>false</inMemory>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>0</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleTableProperties</key>
+      <value class="oracle.javatools.db.ora.OracleTableProperties">
+        <parallelDegree>1</parallelDegree>
+        <tableCompression>NOCOMPRESS</tableCompression>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>PDT</name>
+  </schema>
+</table>
