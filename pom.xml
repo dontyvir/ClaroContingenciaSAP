@@ -14,6 +14,35 @@
         </includes>
       </resource>
     </resources>
+    <plugins>
+      <plugin>
+        <groupId>com.oracle.adf.plugin</groupId>
+        <artifactId>ojdeploy</artifactId>
+        <version>12.2.1-2-0</version>
+        <configuration>
+          <ojdeploy>
+            ${oracleHome}/jdeveloper/jdev/bin/ojdeploy
+          </ojdeploy>
+          <workspace>
+            ${basedir}/PDT.jws
+          </workspace>
+          <profile>
+            PDT
+          </profile>
+          <outputfile>
+            ${project.build.directory}/${project.build.finalName}.ear
+          </outputfile>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
   <modules>
     <module>SerieSUR</module>
@@ -47,30 +76,6 @@
     </dependency>
     <dependency>
       <groupId>PDT</groupId>
-      <artifactId>SerieSUR</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
-      <artifactId>SerieESAC</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
-      <artifactId>SerieSUR</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
-      <artifactId>SerieESAC</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
       <artifactId>MsMontESAC</artifactId>
       <version>1.0-SNAPSHOT</version>
       <type>jar</type>
@@ -96,18 +101,6 @@
     <dependency>
       <groupId>PDT</groupId>
       <artifactId>DesmontEsSUR</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
-      <artifactId>MsMontSUR</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>PDT</groupId>
-      <artifactId>Persistencia</artifactId>
       <version>1.0-SNAPSHOT</version>
       <type>jar</type>
     </dependency>

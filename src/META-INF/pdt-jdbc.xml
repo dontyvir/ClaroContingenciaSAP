@@ -13,6 +13,7 @@
             </property>
         </properties>
         <password-encrypted>FFEB5BB505AD0B2D2C09DFFC10579EE3</password-encrypted>
+        <use-password-indirection>true</use-password-indirection>
     </jdbc-driver-params>
     <jdbc-connection-pool-params>
         <test-table-name>SQL SELECT 1 FROM DUAL</test-table-name>

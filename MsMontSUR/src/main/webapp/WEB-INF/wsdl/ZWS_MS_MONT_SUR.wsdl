@@ -146,7 +146,7 @@
   </wsdl:binding>
   <wsdl:service name="ZWS_MS_MONT_SUR">
     <wsdl:port name="ZWS_MS_MONT_SUR" binding="tns:ZWS_MS_MONT_SUR">
-      <soap:address location="http://localhost:7101/MsMontSUR/ZWSMSMONTSURImplService"/>
+      <soap:address location="http://localhost:7101/MsMontSUR/ZWS_MS_MONT_SUR"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
