@@ -105,8 +105,8 @@
    </hash>
    <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
       <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
-         <value n="alwaysExecutePackageRadioButtonSelected" v="true"/>
-         <value n="defaultExecuteRadioButtonSelected" v="false"/>
+         <value n="alwaysExecutePackageRadioButtonSelected" v="false"/>
+         <value n="defaultExecuteRadioButtonSelected" v="true"/>
          <url n="pomfileURL" path="pom.xml"/>
          <value n="resolveWorkspaceArtifactOn" v="true"/>
       </hash>
