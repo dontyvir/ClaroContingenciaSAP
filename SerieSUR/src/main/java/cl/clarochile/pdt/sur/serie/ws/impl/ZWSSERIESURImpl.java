@@ -10,14 +10,14 @@ import java.math.BigDecimal;
 
 import java.sql.Timestamp;
 
+import java.util.Date;
+
 import javax.ejb.EJB;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-
-import javax.naming.InitialContext;
 
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.RequestWrapper;
@@ -48,10 +48,13 @@ public class ZWSSERIESURImpl {
                                  @WebParam(name = "Rutsociedad") String rutsociedad,
                                  @WebParam(name = "Sku") String sku) {
      
+        Date now = new Date();
+        Timestamp t_now = new Timestamp(now.getTime());
+     
         PdtEnvio envio = new PdtEnvio();
         envio.setPdtEstado("OK");
-        envio.setPdtFechaActualizacion(null);
-        envio.setPdtFechaEnvio(null);
+        envio.setPdtFechaActualizacion(t_now);
+        envio.setPdtFechaEnvio(t_now);
         envio.setPdtIdEnvio(new BigDecimal(0));
         envio.setPdtMensaje("");
         envio.setPdtNegocio("pdtNegocio");
