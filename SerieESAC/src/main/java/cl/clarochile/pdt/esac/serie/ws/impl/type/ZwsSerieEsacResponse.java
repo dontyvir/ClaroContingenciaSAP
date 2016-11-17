@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.esac.serie.ws.type;
+package cl.clarochile.pdt.esac.serie.ws.impl.type;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -39,8 +39,8 @@ public class ZwsSerieEsacResponse {
      * Gets the value of the eCabRes property.
      *
      * @return
-     *     possible object is
-     *     {@link ZesCabRes }
+     * possible object is
+     * {@link cl.clarochile.pdt.esac.serie.ws.impl.type.ZesCabRes}
      *
      */
     public ZesCabRes getECabRes() {
@@ -51,8 +51,8 @@ public class ZwsSerieEsacResponse {
      * Sets the value of the eCabRes property.
      *
      * @param value
-     *     allowed object is
-     *     {@link ZesCabRes }
+     * allowed object is
+     * {@link cl.clarochile.pdt.esac.serie.ws.impl.type.ZesCabRes}
      *
      */
     public void setECabRes(ZesCabRes value) {

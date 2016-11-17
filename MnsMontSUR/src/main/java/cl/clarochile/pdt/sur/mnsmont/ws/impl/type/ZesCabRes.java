@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.sur.mnsmont.ws.type;
+package cl.clarochile.pdt.sur.mnsmont.ws.impl.type;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

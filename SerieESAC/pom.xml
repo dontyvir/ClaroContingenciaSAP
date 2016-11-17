@@ -62,10 +62,26 @@
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
+        <dependency>
+      <groupId>PDT</groupId>
+      <artifactId>Persistencia</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
   </dependencies>
   <properties>
     <oracleHome>
       ${env.ORACLE_HOME}
     </oracleHome>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>PDT</groupId>
+        <artifactId>Persistencia</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <type>jar</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.sur.mnsmont.ws.type;
+package cl.clarochile.pdt.sur.mnsmont.ws.impl.type;
 
 import java.math.BigDecimal;
 
@@ -113,8 +113,8 @@ public class ZwsMnsMontSur {
      * Gets the value of the iCabCon property.
      *
      * @return
-     *     possible object is
-     *     {@link ZesCabCon }
+     * possible object is
+     * {@link cl.clarochile.pdt.sur.mnsmont.ws.impl.type.ZesCabCon}
      *
      */
     public ZesCabCon getICabCon() {
@@ -125,8 +125,8 @@ public class ZwsMnsMontSur {
      * Sets the value of the iCabCon property.
      *
      * @param value
-     *     allowed object is
-     *     {@link ZesCabCon }
+     * allowed object is
+     * {@link cl.clarochile.pdt.sur.mnsmont.ws.impl.type.ZesCabCon}
      *
      */
     public void setICabCon(ZesCabCon value) {

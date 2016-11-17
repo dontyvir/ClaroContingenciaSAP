@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.esac.desmont.ws.type;
+package cl.clarochile.pdt.esac.desmont.ws.impl.type;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -115,8 +115,8 @@ public class ZwsDesmontEsEsac {
      * Gets the value of the iCabCon property.
      *
      * @return
-     *     possible object is
-     *     {@link ZesCabCon }
+     * possible object is
+     * {@link cl.clarochile.pdt.esac.desmont.ws.impl.type.ZesCabCon}
      *
      */
     public ZesCabCon getICabCon() {
@@ -127,8 +127,8 @@ public class ZwsDesmontEsEsac {
      * Sets the value of the iCabCon property.
      *
      * @param value
-     *     allowed object is
-     *     {@link ZesCabCon }
+     * allowed object is
+     * {@link cl.clarochile.pdt.esac.desmont.ws.impl.type.ZesCabCon}
      *
      */
     public void setICabCon(ZesCabCon value) {

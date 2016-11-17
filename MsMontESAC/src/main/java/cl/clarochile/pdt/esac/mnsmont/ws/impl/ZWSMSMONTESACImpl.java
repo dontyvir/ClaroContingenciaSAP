@@ -1,8 +1,20 @@
 package cl.clarochile.pdt.esac.mnsmont.ws.impl;
 
-import cl.clarochile.pdt.esac.mnsmont.ws.type.ObjectFactory;
-import cl.clarochile.pdt.esac.mnsmont.ws.type.ZesCabCon;
-import cl.clarochile.pdt.esac.mnsmont.ws.type.ZesCabRes;
+import cl.clarochile.pdt.esac.mnsmont.ws.impl.type.ObjectFactory;
+import cl.clarochile.pdt.esac.mnsmont.ws.impl.type.ZesCabCon;
+import cl.clarochile.pdt.esac.mnsmont.ws.impl.type.ZesCabRes;
+
+import cl.clarochile.pdt.persistencia.PdtEnvio;
+
+import cl.clarochile.pdt.persistencia.PdtPersistFacadeLocal;
+
+import java.math.BigDecimal;
+
+import java.sql.Timestamp;
+
+import java.util.Date;
+
+import javax.ejb.EJB;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -18,6 +30,10 @@ import javax.xml.ws.ResponseWrapper;
             wsdlLocation = "/WEB-INF/wsdl/ZWS_MS_MONT_ESAC.wsdl")
 @XmlSeeAlso({ ObjectFactory.class })
 public class ZWSMSMONTESACImpl {
+    
+    @EJB
+    PdtPersistFacadeLocal pm;
+    
     public ZWSMSMONTESACImpl() {
     }
 
@@ -42,6 +58,24 @@ public class ZWSMSMONTESACImpl {
                                    @WebParam(name = "Rutsociedad") String rutsociedad,
                                    @WebParam(name = "Sku") String sku,
                                    @WebParam(name = "Tipocliente") String tipocliente) {
+        
+        Date now = new Date();
+        Timestamp t_now = new Timestamp(now.getTime());
+        
+        PdtEnvio envio = new PdtEnvio();
+        envio.setPdtEstado("OK");
+        envio.setPdtFechaActualizacion(t_now);
+        envio.setPdtFechaEnvio(t_now);
+        envio.setPdtIdEnvio(new BigDecimal(0));
+        envio.setPdtMensaje("");
+        envio.setPdtNegocio("pdtNegocio");
+        envio.setPdtOrigen("pdtOrigen");
+        envio.setPdtReintento(new BigDecimal(0));
+        envio.setPdtRespuesta("pdtRespuesta");
+        envio.setPdtServicio("pdtServicio");
+        
+        // persistencia
+        pm.persistPdtEnvio(envio);
         
         ZesCabRes res = new ZesCabRes();
         res.setCode("001");
