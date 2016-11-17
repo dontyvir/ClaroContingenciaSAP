@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.sur.serie.ws.type;
+package cl.clarochile.pdt.sur.serie.ws.impl.type.type;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -51,8 +51,8 @@ public class ZwsSerieSur {
      * Gets the value of the iCabCon property.
      *
      * @return
-     *     possible object is
-     *     {@link ZesCabCon }
+     * possible object is
+     * {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabCon}
      *
      */
     public ZesCabCon getICabCon() {
@@ -63,8 +63,8 @@ public class ZwsSerieSur {
      * Sets the value of the iCabCon property.
      *
      * @param value
-     *     allowed object is
-     *     {@link ZesCabCon }
+     * allowed object is
+     * {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabCon}
      *
      */
     public void setICabCon(ZesCabCon value) {

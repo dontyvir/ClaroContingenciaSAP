@@ -1,13 +1,23 @@
 package cl.clarochile.pdt.sur.serie.ws.impl;
 
-import cl.clarochile.pdt.sur.serie.ws.type.ObjectFactory;
-import cl.clarochile.pdt.sur.serie.ws.type.ZesCabCon;
-import cl.clarochile.pdt.sur.serie.ws.type.ZesCabRes;
+import cl.clarochile.pdt.persistencia.PdtEnvio;
+import cl.clarochile.pdt.persistencia.PdtPersistFacadeLocal;
+import cl.clarochile.pdt.sur.serie.ws.impl.type.type.ObjectFactory;
+import cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabCon;
+import cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabRes;
+
+import java.math.BigDecimal;
+
+import java.sql.Timestamp;
+
+import javax.ejb.EJB;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
+
+import javax.naming.InitialContext;
 
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.RequestWrapper;
@@ -18,6 +28,10 @@ import javax.xml.ws.ResponseWrapper;
             wsdlLocation = "/WEB-INF/wsdl/ZWS_SERIE_SUR.wsdl")
 @XmlSeeAlso({ ObjectFactory.class })
 public class ZWSSERIESURImpl {
+    
+    @EJB
+    PdtPersistFacadeLocal pm;
+    
     public ZWSSERIESURImpl() {
     }
 
@@ -33,6 +47,28 @@ public class ZWSSERIESURImpl {
                                  @WebParam(name = "Numeroserie") String numeroserie,
                                  @WebParam(name = "Rutsociedad") String rutsociedad,
                                  @WebParam(name = "Sku") String sku) {
-        return null;
+     
+        PdtEnvio envio = new PdtEnvio();
+        envio.setPdtEstado("OK");
+        envio.setPdtFechaActualizacion(null);
+        envio.setPdtFechaEnvio(null);
+        envio.setPdtIdEnvio(new BigDecimal(0));
+        envio.setPdtMensaje("");
+        envio.setPdtNegocio("pdtNegocio");
+        envio.setPdtOrigen("pdtOrigen");
+        envio.setPdtReintento(new BigDecimal(0));
+        envio.setPdtRespuesta("pdtRespuesta");
+        envio.setPdtServicio("pdtServicio");
+        
+        // persistencia
+        pm.persistPdtEnvio(envio);
+        
+        ZesCabRes res = new ZesCabRes();
+        res.setCode("001");
+        res.setIdrespuesta("00000000000000000002");
+        res.setMessage("Serie se encuentra disponible");
+        res.setOperationstatus("OK");
+        
+        return res;
     }
 }

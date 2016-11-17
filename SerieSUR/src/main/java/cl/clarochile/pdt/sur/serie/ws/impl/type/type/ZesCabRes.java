@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.sur.serie.ws.type;
+package cl.clarochile.pdt.sur.serie.ws.impl.type.type;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

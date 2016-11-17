@@ -1,4 +1,4 @@
-package persistencia;
+package cl.clarochile.pdt.persistencia;
 
 import javax.ejb.Local;
 

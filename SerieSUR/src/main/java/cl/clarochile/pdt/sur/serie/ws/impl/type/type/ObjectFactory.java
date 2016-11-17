@@ -1,5 +1,5 @@
 
-package cl.clarochile.pdt.sur.serie.ws.type;
+package cl.clarochile.pdt.sur.serie.ws.impl.type.type;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -30,7 +30,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ZwsSerieSur }
+     * Create an instance of {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZwsSerieSur}
      *
      */
     public ZwsSerieSur createZwsSerieSur() {
@@ -38,7 +38,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ZesCabCon }
+     * Create an instance of {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabCon}
      *
      */
     public ZesCabCon createZesCabCon() {
@@ -46,7 +46,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ZwsSerieSurResponse }
+     * Create an instance of {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZwsSerieSurResponse}
      *
      */
     public ZwsSerieSurResponse createZwsSerieSurResponse() {
@@ -54,7 +54,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ZesCabRes }
+     * Create an instance of {@link cl.clarochile.pdt.sur.serie.ws.impl.type.type.ZesCabRes}
      *
      */
     public ZesCabRes createZesCabRes() {
